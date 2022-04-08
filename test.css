@@ -7,12 +7,23 @@
   height: 5vw;
   border: 2px solid black;
   background: rgba(255,212,78,.7);
+  transform-origin: left bottom; /*변화 기준점*/
+  /*.5초 동안 천천히 동작. .1초 후 실행*/
+  transition: .5s .1s;
 }
 
 .box:hover {
-  /* transform: scale(1.2) rotate(15deg); */
+  /* width: 8vw; */
+  /* height: 8vw; */
+  transform: scale(1.2) rotate(30deg);
   /* transform: skewY(30deg) */
-  transform: translate(10px, 10px);
-  transform-origin: left bottom;
+  /* transform: translate(10px, 10px); */
+  background: red;
 }
 /* CSS 중복있으면 맨 아래것만 남는다. */
+/* transform-origin: left bottom
+  transform: rotate(30deg);
+  하면 귀엽다.
+  origin 기준점을 hover 놓으면 어색하다.
+ */
+ /*  */

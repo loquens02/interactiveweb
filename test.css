@@ -1,6 +1,7 @@
 @keyframes sample-ani{
   0% {
     transform: translate(0,0);
+    background: red;
   }
   50% {
     transform: translate(100px, 0);
@@ -20,5 +21,11 @@
   height: 10vw;
   border: 2px solid #000;
   background: #fff000;
-  animation: sample-ani 2s linear 3; /*keyframes이름 duration bezier repeatCount*/
+  animation: sample-ani 2s linear 3 forwards;
+  /*alternate갔다오기 reverse끝에서시작 alternate-reverse forwards끝끝*/
+}
+
+.box:hover {
+  /*animation: paused; 갈굼*/
+  animation-play-state: paused;
 }
